@@ -5,7 +5,7 @@
         <div class="mx-auto py-8 max-w-7xl border-l border-r border-dashed border-gray-700">
           <div data-aos="zoom-in" class="lg:grid lg:grid-cols-12">
             <div
-              class="px-4 sm:px-6 lg:border-r lg:border-dashed lg:border-gray-700 sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:flex lg:items-center">
+              class="px-4 sm:px-6 lg:border-r lg:border-dashed lg:border-gray-700 sm:text-center md:max-w-full md:mx-auto lg:col-span-9 lg:text-left lg:flex lg:items-center">
               <div>
                 <nuxt-link v-if="$config.blog.enabled" :to="localePath('/blog')"
                   class="group inline-flex hover:bg-black items-center text-white bg-gray-900 rounded-full p-0.5 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200">
@@ -44,10 +44,11 @@
                 </div>
               </div>
             </div>
-            <div class="mt-8 px-5 sm:mt-16 lg:mt-0 lg:col-span-6">
+            <div class="mt-8 px-5 lg:mt-0 lg:col-span-3">
               <div
                 class="flex-shrink-0 w-full sm:mx-auto flex flex-1 items-center justify-center rounded-lg p-8 sm:overflow-hidden">
-                <img class="rounded-full h-48 ring-indigo-600 ring-8" :src="$config.image" :alt="$config.name">
+                <img class="rounded-full h-48 ring-indigo-600 hover:ring-hot-pink duration-1000 ring-8"
+                  :src="$config.image" :alt="$config.name">
               </div>
             </div>
           </div>
