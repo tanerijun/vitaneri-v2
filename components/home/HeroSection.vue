@@ -46,8 +46,8 @@
             </div>
             <div class="mt-8 px-5 sm:mt-16 lg:mt-0 lg:col-span-6">
               <div
-                class="flex-shrink-0 w-full sm:mx-auto flex flex-1 items-center justify-center rounded-lg sm:overflow-hidden">
-                <img class="rounded-full h-80" :src="$config.image" :alt="$config.name">
+                class="flex-shrink-0 w-full sm:mx-auto flex flex-1 items-center justify-center rounded-lg p-8 sm:overflow-hidden">
+                <img class="rounded-full h-48 ring-indigo-600 ring-8" :src="$config.image" :alt="$config.name">
               </div>
             </div>
           </div>

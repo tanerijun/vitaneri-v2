@@ -130,7 +130,7 @@ export default {
     // three-bounce
     // wandering-cubes
   },
-  laguageSwitcher: {
+  languageSwitcher: {
     enabled: true
   },
   strings: {
