@@ -19,7 +19,7 @@ author:
 
 In this tutorial, we'll learn how to connect a Spring Boot application with a relational database using JDBCTemplate. First, some background on why JDBCTemplate is used.
 
-### Introduction
+## Introduction
 
 In the Java world, the tool that's used to integrate a database with the language is called Java Database Connectivity (JDBC). JDBC allows you to connect to a DBMS to work with databases. However, JDBC is very verbose, you have to write a lengthy block of code just to execute a simple SQL query, which is not very comfortable to use. Here is an example:
 
@@ -36,7 +36,7 @@ try (PreparedStatement st = con.prepareStatement(sql)) {
 
 Spring's JDBCTemplate comes to the rescue. JDBCTemplate reduces the verbosity of plain JDBC considerably, which you will see in the following tutorial.
 
-### Creating A CRUD App
+## Creating A CRUD App
 
 In this tutorial, we'll be creating a backend service that exposes 3 endpoints: adding a record to the database, removing a record from the database, and showing all the records in the database.
 
@@ -48,7 +48,7 @@ We'll be working with a PostgreSQL database. Inside, there'll be a table called 
 
 _Note: the examples in this tutorial will work with any relational database technology you choose with some minor adjustments. I also assume that you have some basic knowledge of Java, Spring Boot, JDBC, and SQL._
 
-#### Generate Spring Boot Project
+### Generate Spring Boot Project
 
 First, let's use [Spring Initializr](https://start.spring.io/) to generate the base for our app. We need to include these dependencies inside the generated _pom.xml_.
 
@@ -70,7 +70,7 @@ First, let's use [Spring Initializr](https://start.spring.io/) to generate the b
 
 The last dependency is the JDBC Driver for your chosen database, which is PostgreSQL in this case. Also, the reason we add `<scope>runtime</scope>` is because the app only needs the JDBC driver at runtime, it's not needed for compilation.
 
-#### Configure Database
+### Configure Database
 
 Next, let's define our table by creating a file in `/src/main/resources/` called `schema.sql`.
 
@@ -93,7 +93,7 @@ spring.sql.init.mode=always
 
 Going from the first line: your connection URL, your DB username, your DB password, and the last line is there to instruct Spring Boot to always run your `schema.sql` file you defined earlier every time your start the app.
 
-#### Create Model Class
+### Create Model Class
 
 Now that we're done with the basic configuration for the database, let's start working on our app. First, we'll create a model class called `Student` that models our table structure.
 
@@ -110,7 +110,7 @@ public class Student {
 }
 ```
 
-#### Create Repository Class
+### Create Repository Class
 
 Next, we define `StudentRepository` which is a bean in the application context that'll be used by our controller to interact with the database.
 
@@ -193,7 +193,7 @@ public class StudentRepository {
 
 Notice that this time we're using `jdbc.query()` instead of `jdbc.update()`. The `query()` method takes two parameters, the SQL command, and a `RowMapper`. `RowMapper` is responsible for transforming a row from the `ResultSet` into a specific object. In this case, the `Student` object which our app knows how to work with.
 
-#### Create Controller Class
+### Create Controller Class
 
 Now that we are done with our repository object that's in charge of CRUD, the final step is to expose these methods through endpoints. In other words, it's time to implement the controller.
 
@@ -231,7 +231,7 @@ We use constructor dependency injection to get the repository object from the Sp
 
 In case you are wondering why the GET endpoint knows that `List<Student>` has to be returned to the client in JSON format, the answer is, again, Spring Boot's magic. By adding the `@RestController` annotation instead of vanilla `@Controller`, we don't need to explicitly convert POJO to JSON. Spring Boot will handle it for us.
 
-### Wrap Up
+## Wrap Up
 
 And that's it. We're done with the app. You can start the app and test the endpoints using your favorite API testing tools like _Postman_ or _cURL_.
 
@@ -258,7 +258,7 @@ Here is an example of how the request body should look like when calling the DEL
 
 Finally, you can find the source code for this tutorial [here](https://github.com/tanerijun/jdbctemplate-example).
 
-### Bonus: Creating Custom Data Source
+## Bonus: Creating Custom Data Source
 
 Spring automatically configures a `DataSource` bean for you based on the content of your `application.properties` file. This is what you need most of the time, but there might come a time when you also have to define your own `DataSource` bean.
 

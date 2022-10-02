@@ -16,6 +16,10 @@ author:
   image: /images/self.jpg
 ---
 
+I love everything about hte world
+
+<!-- more -->
+
 ## Hello World
 
 Beautiful

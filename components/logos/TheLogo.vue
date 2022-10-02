@@ -1,7 +1,7 @@
 <template>
   <div
     class="font-extrabold hover:text-hot-pink duration-1000 text-3xl animation-logo tracking-tighter text-indigo-700">
-    {{ $config.name[0].toUpperCase() }}
+    VT
   </div>
 </template>
 
