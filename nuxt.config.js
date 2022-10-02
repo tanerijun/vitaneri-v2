@@ -196,7 +196,7 @@ const nuxtConfig = {
     dir: "content",
     markdown: {
       prism: {
-        theme: "prism-themes/themes/prism-vsc-dark-plus.css"
+        theme: "prism-themes/themes/prism-dracula.css"
       }
     }
   },
