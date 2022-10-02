@@ -3,6 +3,13 @@
     <div class="max-w-7xl border-l border-r border-dashed border-gray-700 mx-auto px-4">
       <div class="pt-5 pb-12 md:flex md:items-center md:justify-between">
         <div class="flex space-x-6 md:order-2">
+          <a v-if="$config.email" target="_blank" rel="noreferrer" :href="`mailto:${$config.email}`"
+            class="text-gray-400 hover:text-gray-300">
+            <span class="sr-only">Email</span>
+            <svg class="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 8 6">
+              <path d="m0 0h8v6h-8zm.75 .75v4.5h6.5v-4.5zM0 0l4 3 4-3v1l-4 3-4-3z" />
+            </svg>
+          </a>
           <a v-if="$config.social.facebook" target="_blank" rel="noreferrer"
             :href="`https://facebook.com/${$config.social.facebook}`" class="text-gray-400 hover:text-gray-300">
             <span class="sr-only">Facebook</span>
