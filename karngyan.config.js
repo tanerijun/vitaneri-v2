@@ -3,6 +3,7 @@
 export default {
   name: "Vincent Taneri",
   domain: "vitaneri.com", // add without https:// , used in meta tags and share urls
+  site_name: "Vitaneri",
   image: "/images/bigheadkarngyan.png",
   email: "tanerivince@gmail.com",
   googleAnalyticsV4: {
