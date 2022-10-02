@@ -192,7 +192,7 @@ const nuxtConfig = {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
-    liveEdit: true,
+    liveEdit: false,
     dir: "content",
     markdown: {
       prism: {
