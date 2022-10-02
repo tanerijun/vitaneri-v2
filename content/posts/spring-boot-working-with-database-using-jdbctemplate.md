@@ -8,7 +8,7 @@ tags:
   - spring
   - springboot
   - jdbctemplate
-category: webdev
+category: Web Development
 author:
   name: Vincent Taneri
   twitter: tanerivince

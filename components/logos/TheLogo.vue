@@ -1,6 +1,6 @@
 <template>
   <div
-    class="font-extrabold hover:text-hot-pink duration-1000 text-3xl animation-logo tracking-tighter text-indigo-700">
+    class="font-extrabold hover:text-hot-pink duration-1000 text-3xl animation-logo tracking-tighter text-indigo-700 select-none">
     VT
   </div>
 </template>
