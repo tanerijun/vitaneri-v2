@@ -1,6 +1,7 @@
 ---
 id: 1
 title: "Spring Boot: Working With Database Using JDBCTemplate"
+description: "Learn how to connect a Spring Boot application with a relational database using JDBCTemplate."
 createdAt: "2022-09-01 23:37:00"
 tags:
   - java
@@ -14,11 +15,11 @@ author:
   image: /images/self.jpg
 ---
 
-## Spring Boot: Working With Database Using JDBCTemplate
-
-### Introduction
+# Spring Boot: Working With Database Using JDBCTemplate
 
 In this tutorial, we'll learn how to connect a Spring Boot application with a relational database using JDBCTemplate. First, some background on why JDBCTemplate is used.
+
+### Introduction
 
 In the Java world, the tool that's used to integrate a database with the language is called Java Database Connectivity (JDBC). JDBC allows you to connect to a DBMS to work with databases. However, JDBC is very verbose, you have to write a lengthy block of code just to execute a simple SQL query, which is not very comfortable to use. Here is an example:
 

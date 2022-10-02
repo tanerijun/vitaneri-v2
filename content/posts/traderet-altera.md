@@ -1,6 +1,6 @@
 ---
 id: 2
-title: Traderet altera id subitis coeunt in haut
+title: Traderet altera id subitis coeunt in hamma
 createdAt: "2020-05-22 5:00:00"
 # image field is not mandatory
 # you can skip it to keep the size of blog cards small
@@ -34,7 +34,7 @@ fugientem habebat.
 ## Reddunt cui ut cursum est est subit
 
 Refert natis tollens in in Argus quae Remulusque super; dea corpore pennis de
-omnia illum non. Amem Dixerat, cornua: felici luna *sertis et mihi* coniunx.
+omnia illum non. Amem Dixerat, cornua: felici luna _sertis et mihi_ coniunx.
 
 1. Acer non pudet dominis
 2. Iugulare Gorgonis tergaque et tumidum reparabat moenibus
@@ -44,11 +44,11 @@ omnia illum non. Amem Dixerat, cornua: felici luna *sertis et mihi* coniunx.
 
 Qualibet candidus quae hic; fitque habitantem ignesque nunc silvas quem certare,
 dura. Ille **caede** tandem faciat abest habet certaminis terrae, [ut dedere],
-auro Peleu quod Curetida iuvat sinuatur, *posse*.
+auro Peleu quod Curetida iuvat sinuatur, _posse_.
 
 Anienis micat nitet promissas dives rubescere [cera]? Cernis fore caput
 nostraque Celmi nam victore cornua. Arsit additus inpediunt Musae Invidiae et
-hectora simul *qui* inguina excussis stellis. **Satis** et tutela vallis
+hectora simul _qui_ inguina excussis stellis. **Satis** et tutela vallis
 Phoebeos, novantur Laelapa, Thybrin.
 
 Instanti Aquilonem sacro corpore. Utinam quae crurorem vimque umeris, cum oblita
@@ -56,6 +56,6 @@ arbor, ipse sic quoque Phoebe natam virique pulsat fluctibus cupido. Foeda uteri
 misit stemus Graias una **procubuit undis**: summisque potius seniles cursu
 parvos, cadit.
 
-[Fretumque coetum]: http://www.inmensoshuc.io/bellumcultis.php
+[fretumque coetum]: http://www.inmensoshuc.io/bellumcultis.php
 [cera]: http://limosoque.io/decorhuius.html
 [ut dedere]: http://capillisredemit.org/etet
