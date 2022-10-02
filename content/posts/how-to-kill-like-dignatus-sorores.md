@@ -1,8 +1,8 @@
 ---
 id: 1
-title: Lorem Ipsum Devo
+title: Edited Traderet altera id subitis coeunt in haut
 # image field is not mandatory
-# you can skip it to keep the size of blog cards small
+# skip it to keep the size of blog cards small
 # image: https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3452&q=80
 createdAt: "2020-05-22 5:00:00"
 tags:
@@ -13,7 +13,7 @@ category: dev
 author:
   name: karn
   twitter: gyankarn
-  image: /images/bigheadkarngyan.png
+  image: /images/self.jpg
 ---
 
 Lorem markdownum facinus tollensque aethera acutae ripa arbor duorum, **vae**.
