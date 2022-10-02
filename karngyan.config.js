@@ -46,14 +46,33 @@ export default {
   uses: {
     enabled: true,
     meta: [
-      { title: "OS", value: "macOS Monterey" },
-      { title: "Memory", value: "16 GB 2667 MHz DDR4" },
-      { title: "Keyboard", value: "Keychron K2 - Gateron Brown Keys" },
-      { title: "Mouse", value: "Logitech Silent Pebble" },
-      { title: "Monitor", value: "LG QHD (2560 x 1440) 27 Inch IPS Display" },
+      // { title: "OS", value: "macOS Monterey" },
+      // { title: "Memory", value: "16 GB 2667 MHz DDR4" },
+      // { title: "Keyboard", value: "Keychron K2 - Gateron Brown Keys" },
+      // { title: "Mouse", value: "Logitech Silent Pebble" },
+      // { title: "Monitor", value: "LG QHD (2560 x 1440) 27 Inch IPS Display" },
+      // {
+      //   title: "Laptop",
+      //   value: "MacBook Air M1"
+      // }
+      { title: "Language", value: "English, Chinese, Indonesian (All fluent)" },
       {
-        title: "Laptop",
-        value: "MacBook Air M1"
+        title: "Programming Language",
+        value: "JavaScript, TypeScript, Java, Python, C/C++"
+      },
+      {
+        title: "Frontend",
+        value:
+          "HTML, CSS, Tailwind CSS, Styled Component, Chakra UI, Material UI, JQuery, React (and friends), NextJS, Vue, Nuxt, ..."
+      },
+      {
+        title: "Backend",
+        value:
+          "NodeJS, Express, Spring / Spring Boot, MongoDB, MySQL, PostgreSQL, Firebase, REST, GraphQL, ..."
+      },
+      {
+        title: "IOT",
+        value: "Arduino"
       }
     ]
   },
@@ -150,8 +169,7 @@ export default {
       },
       uses: {
         header: "Uses",
-        subtext:
-          "These are what I use on a daily basis to code and my codestats.net flex :)"
+        subtext: "My tech stack and my codestats.net flex :)"
       },
       projects: {
         header: "Projects",
