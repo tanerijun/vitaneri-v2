@@ -13,7 +13,7 @@
       class="select-none px-4 items-center justify-center sm:justify-start overflow-hidden flex pt-4">
       <nav class="flex flex-wrap items-center justify-center flex-row space-x-2 sm:space-x-4" aria-label="Tabs">
         <button @click="currentCategory = category"
-          :class="{ 'bg-gray-900 text-gray-300': category === currentCategory }" v-for="category in categories"
+          :class="{ 'bg-gray-900 text-gray-300': category === currentCategory }" v-for="category in tags"
           :key="category"
           class="flex text-gray-300 focus:outline-none focus:ring-transparent focus:ring-offset-transparent hover:text-hot-pink px-3 py-2 font-medium text-sm rounded-xl">
           {{ category }}
@@ -29,6 +29,7 @@
 </template>
 
 <script>
+
 const ALL = 'All'
 
 export default {
@@ -40,11 +41,18 @@ export default {
       if (this.currentCategory === ALL)
         return this.posts
       return this.posts.filter(post => post.category === this.currentCategory)
+    },
+    tags() {
+      const tagSet = new Set();
+      tagSet.add(ALL);
+      this.posts.forEach((post) => post.tags.forEach((tag) => tagSet.add(tag)));
+      return tagSet;
     }
   },
   data() {
     return {
       currentCategory: ALL,
+      currentTag: ALL, // the tags array is working now, now we need to find a way to filter by tag
       ALL: ALL, // exporting it to template
     }
   },
@@ -57,7 +65,7 @@ export default {
     const fetchDocsLabel = 'fetchAllPosts'
     console.time(fetchDocsLabel)
     const posts = await $content('posts')
-      .without(['body', 'toc', 'dir', 'extension', 'path', 'tags'])
+      .without(['body', 'toc', 'dir', 'extension', 'path'])
       .sortBy('createdAt', 'desc')
       .fetch()
     console.timeEnd(fetchDocsLabel)

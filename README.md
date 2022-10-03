@@ -146,3 +146,7 @@ TODO:
 - Resume (Config file)
 - Worked at (Config file)
 - Recommendations (Config file)
+
+## NO LONGER MAINTAINED
+
+After building it this far, I realize that Nuxt might be overkill for a simple portfolio and blog site. Time to try SSG
